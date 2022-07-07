@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="stylesheet" href="singin.css">
+
+	<title>login</title>
+</head>
+<body>
+
+	<header class="header">
+		<div id="h1">
+			<h1 class="h1">
+				<p id="h1anime">Anime</p>
+				<p id="h1flv">FLV</p>
+			</h1>
+		</div>
+
+		<div id="h2">
+			<h2 class="h2">Sing In</h2>
+		</div>
+	</header>
+
+
+
+	<div id="email" class="box">
+		<form id='form' name='form' method='post'>
+       		<span class="txtbox">Email</span>
+
+        	<input id='boxemail' class='boxes' name='email' type='text' placeholder='Introduce tu Email' onfocus= "if(this.placeholder == '')this.placeholder ='Introduce tu email'"/>
+		</form>
+	</div>
+
+	<div id="pass" class="box">
+		<form id='form' name='form' method='post'>
+       		<span class="txtbox">Contraseña</span>
+
+        	<input id='boxpass' class='boxes' name='password' type='text' placeholder='Contraseña' onfocus= "if(this.placeholder == '') this.placeholder ='Contraseña'"/>
+		</form>
+	</div>
+
+	<div id="rpass" class="box">
+		<form id='form' name='form' method='post'>
+       		<span id="txtrpass" class="txtbox">Repetir contraseña</span>
+
+        	<input id='boxrpass' class='boxes' name='password' type='text' placeholder='Repetir contraseña' onfocus= "if(this.placeholder == '')this.placeholder ='Repetir contraseña'"/>
+		</form>
+	</div>
+
+
+
+	<div id="login" class="buttons">
+	<!-- <input class="botones" type='submit' name='Singin' id='button' value='Registrarse'/ -->
+		<a href="index.html">Registrar</a>
+	</div>
+
+
+
+	<div id="otherlogin">
+		<h3 id="h3">Conéctate con:</h3>
+		<span class="icon-facebook2"></span>
+		<span class="icon-google-plus2"></span>
+	</div>
+
+</body>
+</html>

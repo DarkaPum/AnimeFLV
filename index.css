@@ -1,0 +1,1166 @@
+
+/* Configuración general para pantallas hasta 320px de ancho como máximo (Mobile S). */
+/*-----------------------------------------------------------------------------------*/
+
+@font-face {
+	font-family: "balsamiqsans";
+	src: url("fonts/BalsamiqSans-Regular.ttf");
+}
+
+/* Códigos de COLORES de AnimeFLV
+-- Blanco: rgb(255,255,255)
+-- Blanco background: rgb(225,234,242)
+-- Azul celeste: rgb(34,222,250)
+-- Amarillo/Oro: rgb(255,175,0)
+-- Verde: rgb(80,242,80)
+-- Gris claro: rgb(59,66,72)
+-- Gris oscuro: rgb(47,53,58)
+-- Gris MUY oscuro: rgb(38,42,46) */
+
+/* Propiedades del BODY */
+/*-----------------------------------------------------------------------------------*/
+
+body {
+	background: rgb(225,234,242);
+	font-family: balsamiqsans;
+	text-align: center;
+
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	margin: 0px;
+}
+
+/* Propiedades del HEADER */
+/*-----------------------------------------------------------------------------------*/
+
+#dark {
+	align-items: center;
+
+	background: rgb(38,42,46);
+	text-align: center;
+	color: white;
+	border-bottom: 2px solid rgb(255,175,0);
+
+	width: 100%;
+	height: 120px;
+	min-height: 120px;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	border-bottom: 2px solid rgb(88,88,88);
+
+	width: 100%;
+	height: 70px;
+}
+
+/* Propiedades del MENU */
+/*-----------------------------------------------------------------------------------*/
+
+.menu {
+	display: flex;
+	justify-content: left;
+
+	width: 18%;
+	height: 100%;
+	padding-left: 10px;
+}
+
+.iconMenu {
+	position: relative;
+
+	cursor: pointer;
+
+	width: 35px;
+	height: 35px;
+	padding-bottom: 9px;
+}
+
+.icon-menu {
+	position: absolute;
+	left: 1px;
+	bottom: 5px;
+
+	background: rgb(38,42,46);
+	border: 2px solid rgb(88, 88, 88);
+	border-radius: 5px;
+	color: rgb(255, 255, 255, 0.5);
+
+	padding: 8px;
+	z-index: 999;
+	-webkit-transition-duration: 0.5s;
+}
+
+.menus {
+	position: relative;
+
+	list-style: none;
+
+	margin: 0px;
+	padding: 0px;
+	z-index: 100;
+}
+
+.principalMenu {
+	display: none;
+	position: relative;
+	top: -16px;
+	left: -12px;
+	
+	background: rgb(38,42,46);
+	cursor: pointer;
+	list-style: none;
+	user-select: none;
+
+	width: 235px;
+	height: 100vh;
+	padding: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	-webkit-transition-duration: 0.5s;
+}
+
+#h1AnimeMenu {
+	color: rgb(255,255,255);
+}
+
+#logoMenu {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+	position: relative;
+
+	font-size: 20px;
+	border-bottom: 2px solid rgb(255,175,0);
+
+	width: 100%;
+	height: 120px;
+	z-index: 90;
+}
+
+/* Propiedades de los H2 del MENU*/
+/*-----------------------------------------------------------------------------------*/
+
+.h2 {
+	position: relative;
+	z-index: 90;
+}
+
+.h2a {
+	text-decoration: none;
+}
+
+#h2{
+	display: flex;
+	justify-content: left;
+
+	font-size: 15px;
+	color: rgb(255,255,255);
+	border-bottom: 2px solid rgb(88, 88, 88);
+
+	padding-bottom: 7px;
+	padding-top: 7px;
+	-webkit-transition-duration: 0.5s;
+}
+
+/* Propiedades del LOGO y H1 */
+/*-----------------------------------------------------------------------------------*/
+
+.logo {
+	display: flex;
+	justify-content: center;
+
+	cursor: pointer;
+
+	width: 64%;
+	padding-right: 6px;
+}
+
+.h1Logo > p {
+	display: inline;
+	justify-content: center;
+
+	font-size: 40px;
+}
+
+.h1 > p {
+	display: inline;
+	justify-content: center;
+	position: relative;
+	top: -25px;
+
+	font-size: 40px;
+
+	padding: 10px 0px;
+}
+
+#h1Flv, #h1FlvMenu {
+	color: rgb(34,222,250);
+
+	margin-left: -8px;
+}
+
+#h1FlvMenu {
+	margin-left: -10px;
+}
+
+/* Propiedades del LOGIN */
+/*-----------------------------------------------------------------------------------*/
+
+.h3 {
+	display: flex;
+	justify-content: right;
+	align-items: center;
+
+	width: 18%;
+	padding-right: 10px;
+}
+
+#h3 {
+	display: flex;
+	justify-content: center;
+
+	background: rgb(38,42,46);
+	border: 2px solid rgb(88, 88, 88);
+	border-radius: 5px;
+	color: rgb(255, 255, 255, 0.5);
+	cursor: pointer;
+
+	width: 35px;
+	height: 35px;
+	-webkit-transition-duration: 0.5s;
+}
+
+#iconProfile {
+	display: flex;
+	align-items: center;
+
+	height: 100%;
+	margin: 0px;
+}
+
+#loginProfile {
+	display: none;
+
+	font-size: 15px;
+
+	padding-top: 2px;
+}
+
+#linkLogin {
+	display: flex;
+
+	text-decoration: none;
+	color: rgb(255, 255, 255, 0.5);
+	-webkit-transition-duration: 0.5s;
+}
+
+.singInProfile {
+	display: none;
+	justify-content: center;
+	align-items: center;
+
+	width: 120px;
+	height: 39px;
+	padding-left: 10px;
+}
+
+#singInProfile {
+	font-size: 18px;
+	letter-spacing: 1px;
+	color: rgb(255,175,0,0.7);
+
+	padding-top: 2px;
+}
+
+#singInProfile:hover {
+	color: rgb(255,175,0,1);
+	-webkit-transition-duration: 0.5s;
+}
+
+/* Propiedades del MENU de CONFIGURACION */
+/*-----------------------------------------------------------------------------------*/
+
+.settings {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 77px;
+
+	font-size: 24px;
+
+	width: 39px;
+	height: 39px;
+	-webkit-transition-duration: 0.5s;*/
+}
+
+.sMenu {
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+}
+
+.iconsMenu {	
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	list-style: none;
+
+	width: 100%;
+	height: 100%;
+	padding-right: 10px;
+}
+
+.icon-more-vertical {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	background: rgb(38,42,46);
+	border: 2px solid rgb(88, 88, 88);
+	border-radius: 5px;
+	color: rgb(255, 255, 255, 0.5);
+
+	width: 35px;
+	height: 35px;
+	z-index: 999;
+	-webkit-transition-duration: 0.5s;
+}
+
+.settingsMenu {
+	display: none;
+
+	position: absolute;
+	top: -77px;
+	right: 0px;
+	
+	background: rgb(38,42,46);
+	cursor: pointer;
+	list-style: none;
+	user-select: none;
+
+	width: 235px;
+	height: 100vh;
+	padding: 0px;
+	padding-left: 15px;
+	padding-right: 15px;
+	z-index: 100;
+	-webkit-transition-duration: 0.5s;
+}
+
+#logoSMenu {
+	display: flex;
+	justify-content: left;
+	align-items: center;
+	position: relative;
+	left: 0px;
+
+	font-size: 20px;
+	border-bottom: 2px solid rgb(255,175,0);
+
+	width: 100%;
+	height: 120px;
+	padding-bottom: 0px;
+	z-index: 90;
+}
+
+.settingsMenu > li > a > #h2 {
+	align-items: center;
+}
+
+.settingsMenu > li > a > #h2 > span {
+	padding-right: 10px;
+}
+
+/* Propiedades de la BARRA DE BUSQUEDA */
+/*-----------------------------------------------------------------------------------*/
+
+.search {
+	width: 100%;
+	height: 50px;
+}
+
+.search-input-wrapper {
+	display: inline-flex;
+	position: absolute;
+	left: 10px;
+
+	background: rgb(38,42,46);
+	border: 2px solid rgb(88, 88, 88);
+	border-radius: 5px;
+
+	width: 77%;
+	height: 35px;
+	margin-top: 5px;
+	-webkit-transition-duration: 0.5s;	
+}
+
+.search-input {
+	background: rgb(38,42,46);
+	color: rgb(255, 255, 255);
+	border: none;
+	border-radius: 5px 0px 0px 5px;
+	letter-spacing: 1px;
+	outline: none;
+
+	width: 100%;
+	padding: 3px 0px 0px 10px;
+}
+
+.search-submit {
+	position: relative;
+
+	background: rgb(59,66,72);
+	color: rgb(255,255,255,0.5);
+	font-size: 20px;
+	border: none;
+	border-left: 2px solid rgb(88, 88, 88);
+
+	width: 45px;
+	height: 35px;
+	-webkit-transition-duration: 0.5s;
+}
+
+.icon-search {
+	position: absolute;
+	top: 9px;
+	right: 12px;
+}
+
+/* Propiedades del HEADER inferior */
+/*-----------------------------------------------------------------------------------*/
+
+#light {
+	background: rgb(59,66,72);
+
+	height: 50px;
+}
+
+#dropdown {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+
+	width: 100%;
+	height: 100%;
+}
+
+/* Propiedades de las OPCIONES de animes */
+/*-----------------------------------------------------------------------------------*/
+
+.dropdownOptions {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	position: relative;
+	top: 0px;
+
+	width: 100%;
+	height: 100%;
+	padding-left: 10px;
+}
+
+.options {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background: rgb(59,66,72);
+	border-right: 2px solid rgb(38,42,46);
+	cursor: pointer;
+
+	width: 45px;
+	height: 40px;
+}
+
+.options > a {
+	text-decoration: none;
+}
+
+.options a p {
+	display: none;
+}
+
+#option1, #option5 {
+	border-left: 2px solid rgb(38,42,46);
+}
+
+#option5 {
+	position: absolute;
+	right: 10px;	
+}
+
+/* Propiedades del SLIDER y los SECTIONS */
+/*-----------------------------------------------------------------------------------*/
+
+.selector {
+	position: fixed;
+
+	width: 100%;
+	height: 100vh;
+}
+
+.selected {
+	display: none;
+	position:relative;
+	top: 0px;
+	left: 0px;
+
+	width: 100%;
+	height: 100%;
+}
+
+#SHome {
+	display: block;
+}
+
+.lastEPBody {
+	position: relative;
+	left: 3%;
+
+	width: 94%;
+	height: 100%;
+}
+
+.lastEPHead {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	position: relative;
+
+	border-bottom: 2px solid rgb(165,165,165);
+
+	width: 100%;
+	height: 40px;
+	margin: 10px 0px;
+}
+
+.h4 {
+	font-size: 18px;
+	color: rgb(38,42,46);
+
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 5px;
+	z-index: 999;
+}
+
+/* Propiedades del BOTON y MENU para FILTRAR */
+/*-----------------------------------------------------------------------------------*/
+
+#lastEPHeadFilter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	cursor: pointer;
+
+	width: 15%;
+	height: 100%;
+}
+
+.filterMenus, .iconFilterMenu, .iconFilterMenu > figure {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.iconFilterMenu {
+	justify-content: right;
+	-webkit-transition-duration: 0.5s;
+}
+
+.icon-filter {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	right: 0px;
+
+	background: rgb(38,42,46);
+	border: 2px solid rgb(88, 88, 88);
+	border-radius: 5px;
+	color: rgb(255, 255, 255, 0.5);
+
+	width: 30px;
+	height: 30px;
+	margin: 0px 5px 1px 0px;
+	z-index: 999;
+	-webkit-transition-duration: 0.5s;
+}
+
+.filterMenu {
+	display: none;
+	position: absolute;
+	top: -3px;
+
+	background: rgb(38,42,46);
+	border: 2px solid rgb(165,165,165);
+	border-radius: 5px;
+	font-size: 16px;
+	list-style: none;
+	color: rgb(255, 255, 255);
+	user-select: none;
+	
+	width: 270px;
+	height: 175px;
+	padding-left: 15px;
+	padding-right: 15px;
+	z-index: 100;
+}
+
+#filterMenuTittle {
+	display: flex;
+	align-items: center;
+	position: absolute;
+
+	border-bottom: 2px solid rgb(255,175,0);
+
+	width: 270px;
+	height: 41px;
+}
+
+#filterMenuP {
+	letter-spacing: 1px;
+	padding-top: 3px;
+}
+
+.checks {
+	display: flex;
+	flex-direction: row;
+	text-align: right;
+	position: relative;
+	top: 45px;
+
+	border-bottom: 2px solid rgb(88, 88, 88);
+
+	width: 100%;
+	height: 30px;
+	padding-top: 10px;
+	-webkit-transition-duration: 0.5s;
+}
+
+.checks > span {
+	padding-top: 3px;
+}
+
+.checks > input {
+	display: block;
+	justify-content: center;
+
+	width: 35px;
+	height: 20px;
+	margin-bottom: 10px;
+}
+
+
+
+
+.lastEPAnimes {
+	display: block;
+
+	width: 100%;
+	height: 100%;
+}
+
+.containerAnimes {
+	display: flex;
+	position: relative;
+
+	background: rgb(255,255,255);
+	border-radius: 5px;
+
+	width: 100%;
+	height: 170px;
+}
+
+.containerButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+
+	background: rgb(59,66,72,0.3);
+	border: 2px solid rgb(165,165,165,0.5);
+	user-select: none;
+
+	width: 40px;
+	height: 98%;
+	-webkit-transition-duration: 0.5s;
+}
+
+#containerButtonLeft {
+	left: 0px;
+	border-radius: 5px 0px 0px 5px;
+}
+
+#containerButtonRight {
+	right: 0px;
+	border-radius: 0px 5px 5px 0px;
+}
+
+.sliderButton {
+	position: relative;
+
+	width: 31px;
+	height: 46px;
+}
+
+.sliderButton > span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-size: 40px;
+	color: rgb(34,222,250,0.5);
+
+	width: 100%;
+	height: 100%;
+	-webkit-transition-duration: 0.5s;
+}
+
+.listAnimes {
+	list-style: none;
+
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.slideLastEp {
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 54px;
+
+	width: 190px;
+	height: 150px;
+}
+
+#first {
+	display: block;
+}
+
+.imgAnime > img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+
+	border: 2px solid rgb(255,175,0);
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.3);
+
+	width: 190px;
+	height: 150px;
+}
+
+.infoBottom {
+	text-align: left;
+	position: absolute;
+	bottom: -2px;
+	right: -2px;
+
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px -50px 40px 0px rgb(0,0,0,0.7);
+
+	width: 190px;
+	height: 150px;
+}
+
+.infoBottomAnime {
+	position: absolute;
+	bottom: -5px;
+
+	font-size: 14px;
+
+	padding: 5px;
+	padding-bottom: 10px;
+}
+
+.infoBottomEp {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	
+	background: rgb(255,175,0);
+	border-radius: 5px;
+	font-size: 12px;
+	color: rgb(0, 0, 0);
+
+	width: 60px;
+	height: 15px;
+	margin: 3px;
+}
+
+
+
+
+
+
+
+#SFollow {
+	background: rgb(0, 255, 0,0.3);
+}
+
+#SFav {
+	background: rgb(0, 0, 255,0.3);
+}
+
+#SSeeLater {
+	background: rgb(255, 255, 0,0.3);
+}
+
+#SMore {
+	background: rgb(255, 0, 255,0.3);
+}
+
+
+
+
+
+
+
+
+
+
+/* ACCIONES */
+/*-----------------------------------------------------------------------------------*/
+
+/* ACCIONES de la Barra de Búsqueda */
+.search-input-wrapper:hover {
+	border: 2px solid rgb(34,222,250);
+	-webkit-transition-duration: 0.5s;
+}
+
+.search-input-wrapper:hover .icon-search:before {
+	color: rgb(255,255,255,1);
+	-webkit-transition-duration: 0.5s;
+}
+
+/* ACCIONES del BOTON de Login */
+#h3:hover {
+	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
+	color: rgb(255, 255, 255, 1);
+	-webkit-transition-duration: 0.5s;
+}
+
+#h3:hover #linkLogin {
+	color: rgb(255, 255, 255, 1);
+	-webkit-transition-duration: 0.5s;
+}
+
+/*ACCIONES del BOTON de Configuración */
+.icon-more-vertical:hover {
+	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
+	color: rgb(255, 255, 255, 1);
+	-webkit-transition-duration: 0.5s;
+}
+
+/* ACCIONES del BOTON del Menú */
+.icon-menu:hover {
+	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
+	color: rgb(255, 255, 255, 1);
+	-webkit-transition-duration: 0.5s;
+}
+
+.h2a:hover #h2 {
+	border-bottom: 2px solid rgb(34,222,250);
+	-webkit-transition-duration: 0.5s;
+}
+
+/* ACCIONES de los BOTONES del HEADER LIGHT */
+.options:hover {
+	background: rgb(90,100,110);
+	-webkit-transition-duration: 0.5s;
+}
+
+/* ACCIONES del BOTON de los FILTROS */
+.icon-filter:hover {
+	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
+	color: rgb(255, 255, 255, 1);
+	-webkit-transition-duration: 0.5s;
+}
+
+.checks:hover {
+	border-bottom: 2px solid rgb(34,222,250);
+	-webkit-transition-duration: 0.5s;
+}
+
+/* ACCIONES de los BOTONES de los SLIDERS */
+.containerButton:hover .sliderButton > span {
+	color: rgb(34,222,250,1);
+	text-shadow: 0px 0px 5px rgb(34,222,250);
+	-webkit-transition-duration: 0.5s;
+}
+
+.containerButton:hover {
+	background: rgb(59,66,72,0.9);
+	border: 2px solid rgb(165,165,165,1);
+	-webkit-transition-duration: 0.5s;
+}
+
+
+
+
+/* Códigos alfanuméricos para los logos de Facebook, Perfil y Menú */
+/*-----------------------------------------------------------------------------------*/
+
+.icon-facebook2:before {
+	content: "\ea91";
+}
+
+.icon-user:before {
+	content: "\e971";
+	font-size: 20px;
+}
+
+.icon-more-vertical:before {
+	content: "\e900";
+}
+
+.icon-menu:before {
+	content: "\e902";
+	font-size: 20px;
+}
+
+.icon-search:before {
+	content: "\e986";
+	color: rgb(255,255,255,0.5);
+	font-size: 18px;
+}
+
+.icon-play3:before {
+	content: "\ea1c";
+	color: rgb(34,222,250);
+	font-size: 20px;
+}
+
+.icon-star-full:before {
+	content: "\e9d9";
+	color: rgb(255,175,0);
+	font-size: 20px;
+}
+
+.icon-watch_later:before {
+	content: "\e903";
+	color: rgb(80,242,80);
+	font-size: 20px;
+}
+
+.icon-plus:before {
+	content: "\ea0a";
+	color: rgb(255,255,255);
+	font-size: 20px;
+}
+
+.icon-home:before {
+	content: "\e904";
+	color: rgb(255,255,255);
+	font-size: 20px;
+}
+
+.icon-cog:before {
+	content: "\e994";
+	font-size: 20px;
+}
+
+.icon-brightness-contrast:before {
+	content: "\e9d6";
+	font-size: 20px;
+}
+
+.icon-help-circle:before {
+	content: "\e905";
+	font-size: 20px;
+}
+
+.icon-exit:before {
+	content: "\ea14";
+	font-size: 20px;
+}
+
+.icon-filter:before {
+	content: "\e906";
+	font-size: 18px;
+}
+
+.icon-chevron-left:before {
+  content: "\e907";
+}
+
+.icon-chevron-right:before {
+  content: "\e908";
+}
+
+
+/* KEYFRAMES para el parpadeo de la IMAGEN y el TEXTO "Atrás" */
+/*-----------------------------------------------------------------------------------*/
+@-webkit-keyframes right{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(-50%);
+	}
+}
+
+@-webkit-keyframes left{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateX(-220px);
+	}
+}
+
+@-webkit-keyframes bajada{
+	0%{
+		opacity: 0;
+		-webkit-transform: translateY(-50%);
+	}
+}
+
+
+
+
+
+
+
+/* Configuración específica para pantallas hasta 425px de ancho como máximo (Mobile L). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 425px){
+
+}
+
+/* Configuración específica para pantallas hasta 768px de ancho como máximo (Tablet). */
+/*------------------------------------------------------------------------------------*/
+
+@media screen and (min-width: 768px){
+
+	/* Propiedades del MENU */
+	/*----------------------*/
+	.menu {
+		width: 30%;
+	}
+
+	/* Porpiedades del MENU DESPLEGABLE */
+	/*----------------------------------*/
+	.principalMenu {
+		width: 245px;
+	}
+
+	/* Propiedades del LOGO y H1 */
+	/*---------------------------*/
+	.logo {
+		width: 40%;
+	}
+
+	/* Propiedades del LOGIN */
+	/*-----------------------*/
+	.h3 {
+		width: 30%;
+	}
+
+	.singInProfile {
+		display: flex;
+	}
+
+	/* Propiedades del BOTON de CONFIGURACIÓN */
+	/*----------------------------------------*/
+	/*.settings {
+		position: relative;
+		top: 0;
+	}*/
+
+	/* Propiedades de la BARRA DE BUSQUEDA */
+	/*-------------------------------------*/
+	.search-input-wrapper {
+		justify-content: center;
+		position: relative;
+		width: 350px;
+	}
+
+	.search-input-wrapper:focus-within {
+		width: 50%;
+	}
+
+	/* Propiedades de las OPCIONES de animes */
+	/*---------------------------------------*/
+	.options {
+		width: 130px;
+	}
+
+	.options > a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		text-decoration: none;
+		color: rgb(255, 255, 255);
+	}
+
+	.options a p {
+		display: flex;
+		padding: 3px 5px 0px 5px;;
+	}
+
+	.options > span {
+		padding-left: 5px;
+	}
+
+}
+
+/* Configuración específica para pantallas hasta 1024px de ancho como máximo (Laptop). */
+/*-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px){
+
+	#h3 {
+		width: 160px;
+	}
+
+	#loginProfile {
+		display: flex;
+		align-items: center;
+
+		font-size: 18px;
+		letter-spacing: 1px;
+
+		height: 100%;
+		margin: 0px;
+		padding-left: 4px;
+	}
+
+}
+
+/* Configuración específica para pantallas hasta 1680px de ancho como máximo (Desktop). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1680px){
+
+}
+
+/* Configuración específica para pantallas hasta 1920px de ancho como máximo (Desktop). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1920px){
+
+}

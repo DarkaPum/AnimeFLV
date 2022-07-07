@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="icons/style.css">
+	<link rel="stylesheet" href="login.css">
+
+	<title>login</title>
+</head>
+<body>
+
+	<header class="header">
+		<div id="h1">
+			<h1 class="h1">
+				<p id="h1anime">Anime</p>
+				<p id="h1flv">FLV</p>
+			</h1>
+		</div>
+
+		<div id="h2">
+			<h2 class="h2">Login</h2>
+		</div>
+	</header>
+
+
+
+	<div id="email" class="box">
+		<form id='form' name='form' method='post' action='suscribe.php'>
+       		<span class="txtbox">Email</span>
+
+        	<input id='boxemail' class='boxes' name='email' type='text' placeholder='Introduce tu Email' onfocus= "if(this.placeholder == '')this.placeholder ='Introduce tu email'"/>
+		</form>
+	</div>
+
+	<div id="pass" class="box">
+		<form id='form' name='form' method='post' action='suscribe.php'>
+       		<span class="txtbox">Contraseña</span>
+
+        	<input id='boxpass' class='boxes' name='password' type='text' placeholder='Contraseña' onfocus= "if(this.placeholder == '')this.placeholder ='Contraseña'"/>
+		</form>
+	</div>
+
+
+
+	<div id="fpass" class="buttons">
+		<a href="forgotpass.html">¿Olvidaste tu contraseña?</a>
+	</div>
+
+	<div id="remember">
+		<input id='rememberme' name='rememberme' type='checkbox'/>
+		<span>Recuérdame</span>
+	</div>
+
+	<div id="login" class="buttons">
+	<!-- <input class="botones" type='submit' name='Login' id='button' value='Conectar'/> -->
+		<a href="index.html">Conectar</a>
+	<!-- <input class="botones" type='submit' name='Singin' id='button' value='Registrarse'/ -->
+		<a href="singin.html">Registrarte</a>
+	</div>
+
+
+
+	<div id="otherlogin">
+		<h3 id="h3">Conéctate con:</h3>
+		<span class="icon-facebook2"></span>
+		<span class="icon-google-plus2"></span>
+	</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,220 @@
+
+/* Configuración general para pantallas hasta 320px de ancho como máximo (Mobile S). */
+/*-----------------------------------------------------------------------------------*/
+
+/* FUENTE utilizada para los textos */
+
+@font-face {
+	font-family: "balsamiqsans";
+	src: url("fonts/BalsamiqSans-Regular.ttf");
+}
+
+/* Códigos de COLORES de AnimeFLV
+-- Blanco: rgb(255,255,255)
+-- Blanco background: rgb(225,234,242)
+-- Azul celeste: rgb(34,222,250)
+-- Amarillo/Oro: rgb(255,175,0)
+-- Verde: rgb(80,242,80)
+-- Gris claro: rgb(59,66,72)
+-- Gris oscuro: rgb(47,53,58) 
+-- Gris MUY oscuro: rgb(38,42,46) */
+
+/* Propiedades generales del BODY */
+
+body {
+	background: rgb(225,234,242);
+
+	font-family: balsamiqsans;
+	text-align: center;
+	vertical-align: center;
+
+	width: 100%;
+	height: 95vh;
+	min-height: 95vh;
+
+	margin: auto;
+}
+
+/* Propiedades generales del HEADER y los DIV que contiene */
+
+header {	
+	color: white;
+	width: 100%;
+}
+
+.h1 {
+	height: 60px;
+
+	display: flex;
+	justify-content: center;
+
+	background: rgb(47,53,58);
+	border-bottom: 2px solid rgb(255,175,0);
+
+	margin-top: 0px;
+	margin-bottom: -20px;
+}
+
+.h1 > p {
+	font-size: 25px;
+	margin-top: 20px;
+}
+
+#h1flv {
+	color: rgb(34,222,250);
+}
+
+.h2 {
+	background: rgb(59,66,72);
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Propiedades de las cajas de Email y Contraseña */
+
+.box > form {
+	display: flex;
+	justify-content: center;
+
+	width: 100%;
+
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.box {
+	display: flex;
+	justify-content: center;
+}
+
+.txtbox {
+	margin-right: 10px;
+	margin-top: 7px;
+}
+
+.boxes {
+	width: 175px;
+	height: 25px;
+}
+
+#email {
+	margin-left: 44px;
+}
+
+/* Propiedades de Recordarme y BOTONES de Recuperar contraseña, Conectar y Registrarte */
+
+#remember {
+	margin-top: 25px;
+}
+
+#remember > span {
+	font-size: 18px;
+}
+
+.buttons {
+	margin-top: 10px;
+}
+
+#login {
+	margin-top: 40px;
+	margin-left: 10px;
+}
+
+.buttons > a {
+	text-decoration: none;
+	color: rgb(34,170,250);
+
+	margin: 10px;
+}
+
+#fpass > a {
+	color: rgb(0,0,0)
+
+	background: rgb(255,255,255);
+}
+
+#login > a {
+	color: rgb(255,255,255);
+
+	border: 1px solid rgb(255,175,0);
+	border-radius: 5px;
+	background: rgb(59,66,72);
+
+	padding: 10px;
+}
+
+/* Códigos alfanuméricos para los logos de Facebook y Google */
+
+.icon-facebook2:before {
+	color: rgb(59,89,152);
+	font-size: 35px;
+	content: "\ea91";
+
+	margin: 5px;
+}
+
+.icon-google-plus2:before {
+	color: rgb(219,74,57);
+	font-size: 35px;
+	content: "\ea8c";
+
+	margin: 5px;
+}
+
+/* Propiedades de los LOGOS de facebook y google */
+
+#otherlogin {
+	margin-top: 40px;
+}
+
+
+
+
+
+
+/* Configuración específica para pantallas hasta 425px de ancho como máximo (Mobile L). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 425px){
+	/*Propiedades del HEADER, H1 y H2 */
+	.h1 	{ height: 80px; margin-bottom: -21px; }
+	.h1 > p { font-size: 40px; margin-top: 20px; }
+	.h2 	{ font-size: 24px; padding-top: 10px; padding-bottom: 10px; }
+
+	/* Propiedades de los BOTONES Conectar y Registrarte */
+	#login > a 	{ padding: 15px 30px; }
+
+	/* Códigos alfanuméricos para los logos de Facebook y Google */
+	.icon-facebook2:before		{ font-size: 50px; }
+	.icon-google-plus2:before	{ font-size: 50px; }
+
+	/* Propiedades de los LOGOS de facebook y google */
+	#otherlogin { margin-top: 50px;	}
+}
+
+/* Configuración específica para pantallas hasta 768px de ancho como máximo (Tablet). */
+/*------------------------------------------------------------------------------------*/
+@media screen and (min-width: 768px){
+	/*Propiedades del HEADER, H1 y H2 */
+	.h1 	{ height: 144px; }
+	.h1 > p { font-size: 60px; margin-top: 42px; }
+	.h2 	{ font-size: 30px; margin-top: 21px; padding-top: 15px; padding-bottom: 15px; }
+
+	/* Propiedades de las cajas de Email y Contraseña */
+	.boxes { width: 250px; }
+	#email { margin-top: 50px; }
+
+	/* Propiedades de los BOTONES Conectar y Registrarte */
+	#login > a { padding: 15px 30px; }
+
+	/* Códigos alfanuméricos para los logos de Facebook y Google */
+	.icon-facebook2:before		{ font-size: 50px; }
+	.icon-google-plus2:before	{ font-size: 50px; }
+}
+
+/* Configuración específica para pantallas hasta 1024px de ancho como máximo (Laptop). */
+/*-------------------------------------------------------------------------------------*/
+@media screen and (min-width: 1024px){
+	/* Propiedades de las cajas de Email y Contraseña */
+	#email 		{ margin-top: 50px; }
+}

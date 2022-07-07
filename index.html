@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="icons\style.css">
+	<link rel="stylesheet" href="index.css">
+
+	<title>Inicio</title>
+</head>
+<body>
+	<header class="header">
+
+		<div id="dark">
+
+			<div class="container">
+
+				<div class="menu">
+					<ul class="menus">
+						<li id="iconMenu" class="iconMenu">
+							<figure  onclick="displayMenu()">
+								<span class="icon-menu"></span>
+							</figure>
+
+							<ul id="principalMenu" class="principalMenu">
+
+								<li id="logoMenu">
+									<h1 class="h1">
+										<p id="h1AnimeMenu">Anime</p>
+										<p id="h1FlvMenu">FLV</p>
+									</h1>
+								</li>
+
+								<li id="home" class="h2">
+									<a id="h2Home" class="h2a" href="index.html">
+										<h2 id="h2">INICIO</h2>
+									</a>
+								</li>
+								
+								<li id="library" class="h2">
+									<a id="h2Library" class="h2a" href="library.html">
+										<h2 id="h2">DIRECTORIO ANIME</h2>
+									</a>
+								</li>
+
+								<li id="broadcast" class="h2">
+									<a id="h2Broadcast" class="h2a" href="broadcast.html">
+										<h2 id="h2">EN EMISIÓN</h2>
+									</a>
+								</li>
+
+								<li id="follow" class="h2">
+									<a id="h2Follow" class="h2a" href="follow.html">
+										<h2 id="h2">SIGUIENDO</h2>
+									</a>
+								</li>
+
+								<li id="favourite" class="h2">
+									<a id="h2Favourite" class="h2a" href="favourite.html">
+										<h2 id="h2">FAVORITOS</h2>
+									</a>
+								</li>
+
+								<li id="seeLater" class="h2">
+									<a id="h2SeeLater" class="h2a" href="seelater.html">
+										<h2 id="h2">VER MÁS TARDE</h2>
+									</a>
+								</li>
+
+							</ul>
+						</li>
+					</ul>
+				</div>
+
+				<div class="logo">
+					<h1 class="h1Logo">
+						<p id="h1Anime">Anime</p>
+						<p id="h1Flv">FLV</p>
+					</h1>
+				</div>
+
+				<div class="h3">
+					<a id="linkLogin" href="login.html">
+						<h3 id="h3">
+							<p id=iconProfile>
+								<span class="icon-user"></span>
+							</p>
+							<p id="loginProfile">Iniciar Sesión</p>
+						</h3>
+					</a>
+
+					<div class="singInProfile">
+						<a id="singInProfile" href="singin.html">ó Regístrate</a> 
+					</div>
+
+					<div class="settings">
+
+						<div class="sMenu">
+							<ul class="sMenus">
+								<li id="iconsMenu" class="iconsMenu">
+									<figure  onclick="displaySettingsMenu()">
+										<span id="icon-more-vertical" class="icon-more-vertical"></span>
+									</figure>
+
+									<ul id="settingsMenu" class="settingsMenu">
+
+										<li id="logoSMenu">
+											<h1 class="h1">
+												<p id="h1AnimeMenu">Anime</p>
+												<p id="h1FlvMenu">FLV</p>
+											</h1>
+										</li>
+
+										<li id="myAccount" class="h2">
+											<a id="h2myAccount" class="h2a" href="myAccount.html">
+												<h2 id="h2"><span id="iconSettings" class="icon-user"></span>Mi cuenta</h2>
+											</a>
+										</li>
+										
+										<li id="setting" class="h2">
+											<a id="h2setting" class="h2a" href="setting.html">
+												<h2 id="h2"><span class="icon-cog"></span>Configuración</h2>
+											</a>
+										</li>
+
+										<li id="darkMode" class="h2">
+											<a id="h2darkMode" class="h2a" href="darkMode.html">
+												<h2 id="h2"><span class="icon-brightness-contrast"></span>Modo oscuro</h2>
+											</a>
+										</li>
+
+										<li id="help" class="h2">
+											<a id="h2help" class="h2a" href="help.html">
+												<h2 id="h2"><span class="icon-help-circle"></span>Ayuda</h2>
+											</a>
+										</li>
+
+										<li id="closeSession" class="h2">
+											<a id="h2closeSession" class="h2a" href="closeSession.html">
+												<h2 id="h2"><span class="icon-exit"></span>Cerrar sesión</h2>
+											</a>
+										</li>
+
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="search">
+				<div class="search-wrapper">
+					<form class="search-form" action="#" method="post">
+						<div class="search-input-wrapper">
+							<input class="search-input" type="search" placeholder="Busca tu anime">
+							<div class="search-input-submit">
+								<input class="search-submit" type="submit" value="">
+									<span class="icon-search"></span>
+								</input>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+
+		</div>
+
+
+
+		<div id="light">
+
+			<div id="dropdown">
+				<div class="dropdownOptions">
+
+					<div class="options" id="option1" onclick="navSection('SHome')">
+						<a href="#">
+							<span class="icon-home"></span>
+							<p>INICIO</p>
+						</a>
+					</div>
+
+					<div class="options" id="option2" onclick="navSection('SFollow')">
+						<a href="#">
+							<span class="icon-play3"></span>
+							<p>SIGUIENDO</p>
+						</a>
+					</div>
+
+					<div class="options" id="option3" onclick="navSection('SFav')">
+						<a href="#">
+							<span class="icon-star-full"></span>
+							<p>FAVORITOS</p>
+						</a>
+					</div>
+
+					<div class="options" id="option4" onclick="navSection('SSeeLater')">
+						<a href="#">
+							<span class="icon-watch_later"></span>
+							<p>VER LUEGO</p>
+						</a>
+					</div>
+
+					<div class="options" id="option5" onclick="navSection('SMore')">
+						<a href="library.html">
+							<span class="icon-plus"></span>
+							<p>VER MÁS</p>
+						</a>
+					</div>
+
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+
+
+
+
+	<div class="selector">
+		<section class="selected" id="SHome">
+
+
+
+			<div class="lastEPBody">
+
+				<div class="lastEPHead">
+
+					<div id="LastEPHeadTittle">
+						<h4 class="h4">Últimos episodios agregados</h4>
+					</div>
+
+					<div id="lastEPHeadFilter">
+						<ul class="filterMenus">
+							<li id="iconFilterMenu" class="iconFilterMenu">
+
+								<figure  onclick="displayFilterMenu()">
+									<span id="icon-filter" class="icon-filter"></span>
+								</figure>
+
+								<ul id="filterMenu" class="filterMenu">
+
+									<div id="filterMenuTittle">
+										<p id="filterMenuP">AGREGADOS:</p>
+									</div>
+
+									<li id="today" class="checks">
+										<input id='checkToday' name='checkToday' type='checkbox'/>
+										<span>Hoy</span>
+									</li>
+									
+									<li id="lastWeek" class="checks">
+										<input id='checkLastWeek' name='checkLastWeek' type='checkbox'/>
+										<span>Última semana</span>
+									</li>
+
+									<li id="lastMonth" class="checks">
+										<input id='checkLastMonth' name='checkLastMonth' type='checkbox'/>
+										<span>Último mes</span>
+									</li>
+								</ul>
+
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="lastEPAnimes">
+
+					<div class="containerAnimes">
+
+						<div id="containerButtonLeft" class="containerButton" onclick="displaySection('prev')">
+							<div id="sliderButtonLeft" class="sliderButton">
+								<span class="icon-chevron-left"></span>
+							</div>
+						</div>
+
+						<ul class="listAnimes">
+
+							<section class="slideLastEp" id="first">
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/1-Digimon-Ghost-Game-ep31.jpg" alt="Digimon-Ghost-Game-ep31">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Digimon Ghost Game</span>
+										<span class="infoBottomEp">Ep.31</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="second">
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/2-Kindom-4th-Season-ep12.jpg" alt="Kindom-4th-Season-ep12">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Kindom 4th Season</span>
+										<span class="infoBottomEp">Ep.12</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="third">
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/3-Kawaii-dake-ja-Nai-Shikimorisan-ep10.jpg" alt="Kawaii-dake-ja-Nai-Shikimorisan-ep10">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Kawaii dake ja Nai Shikimorisan</span>
+										<span class="infoBottomEp">Ep.10</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="fourth">	
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/4-Kakkou-no-linazuke-ep10.jpg" alt="Kakkou-no-linazuke-ep10">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Kakkou no linazuke</span>
+										<span class="infoBottomEp">Ep.10</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="fifth">
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/5-Build-Divide-Code-White-ep12.jpg" alt="Build-Divide-Code-White-ep12">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Build Divide Code White </span>
+										<span class="infoBottomEp">Ep.12</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="sixth">	
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/6-Kunoichi-Tsubaki-no-mune-no-ichi-ep12.jpg" alt="Kunoichi-Tsubaki-no-mune-no-ichi-ep12">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Kunoichi Tsubaki no mune no ichi</span>
+										<span class="infoBottomEp">Ep.12</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="seventh">
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/7-Gunjou-no-Fanfare-ep13.jpg" alt="Gunjou-no-Fanfare-ep13">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Gunjou no Fanfare</span>
+										<span class="infoBottomEp">Ep.13</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="eighth">	
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/8-Spy-x-Family-ep12.jpg" alt="Spy-x-Family-ep12">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Spy x Family</span>
+										<span class="infoBottomEp">Ep.12</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="nineth">
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/9-Love-Live-Nijigasaki-gakuen-school-idol-doukoukai-ep13.jpg" alt="Love-Live-Nijigasaki-gakuen-school-idol-doukoukai-ep13">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Love Live Nijigasaki gakuen school idol doukoukai</span>
+										<span class="infoBottomEp">Ep.13</span>
+									</div>
+								</li>
+							</section>
+
+							<section class="slideLastEp" id="tenth">	
+								<li class="frontPage">
+									<figure class="imgAnime">
+										<img src="img/lastEpisodes/10-Ao-Ashi-ep12.jpg" alt="Ao-Ashi-ep12">
+									</figure>
+
+									<div class="infoBottom">
+										<span class="infoBottomAnime">Ao Ashi</span>
+										<span class="infoBottomEp">Ep.12</span>
+									</div>
+								</li>
+							</section>
+								
+						</ul>
+
+						<div id="containerButtonRight" class="containerButton" onclick="displaySection('next')">
+							<div id="sliderButtonRight" class="sliderButton">
+								<span class="icon-chevron-right"></span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+
+
+
+
+
+		<section class="slide" id="SFollow"></section>
+
+		<section class="slide" id="SFav"></section>
+
+		<section class="slide" id="SSeeLater"></section>
+
+		<section class="slide" id="SMore"></section>
+	</div>
+
+
+
+
+
+	<footer>
+		
+	</footer>
+
+
+
+
+
+	<script src="js\jsAnimeFLV.js"></script>
+
+
+</body>
+</html>
