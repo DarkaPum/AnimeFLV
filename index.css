@@ -1,6 +1,6 @@
 
 /* Configuración general para pantallas hasta 320px de ancho como máximo (Mobile S). */
-/*-----------------------------------------------------------------------------------*/
+/* ===================================================== */
 
 @font-face {
 	font-family: "balsamiqsans";
@@ -18,8 +18,7 @@
 -- Gris MUY oscuro: rgb(38,42,46) */
 
 /* Propiedades del BODY */
-/*-----------------------------------------------------------------------------------*/
-
+/* ===================================================== */
 body {
 	background: rgb(225,234,242);
 	font-family: balsamiqsans;
@@ -32,9 +31,8 @@ body {
 }
 
 /* Propiedades del HEADER */
-/*-----------------------------------------------------------------------------------*/
-
-#dark {
+/* ===================================================== */
+.header__dark {
 	align-items: center;
 
 	background: rgb(38,42,46);
@@ -49,7 +47,7 @@ body {
 	padding: 0px;
 }
 
-.container{
+.header__top{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -60,10 +58,9 @@ body {
 	height: 70px;
 }
 
-/* Propiedades del MENU */
-/*-----------------------------------------------------------------------------------*/
-
-.menu {
+/* Propiedades de la parte IZQUIERDA del HEADER */
+/* ===================================================== */
+.top__left {
 	display: flex;
 	justify-content: left;
 
@@ -72,9 +69,19 @@ body {
 	padding-left: 10px;
 }
 
-.iconMenu {
+.left__wrapper {
 	position: relative;
 
+	list-style: none;
+
+	margin: 0px;
+	padding: 0px;
+	z-index: 100;
+}
+
+.left__dropdown {
+	position: relative;
+ 
 	cursor: pointer;
 
 	width: 35px;
@@ -94,20 +101,12 @@ body {
 
 	padding: 8px;
 	z-index: 999;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-.menus {
-	position: relative;
-
-	list-style: none;
-
-	margin: 0px;
-	padding: 0px;
-	z-index: 100;
-}
-
-.principalMenu {
+/* Propiedades del MENU DESPLEGABLE del HEADER */
+/* ----------------------------------------------------- */
+#left__menu {
 	display: none;
 	position: relative;
 	top: -16px;
@@ -123,14 +122,10 @@ body {
 	padding: 0px;
 	padding-left: 15px;
 	padding-right: 15px;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-#h1AnimeMenu {
-	color: rgb(255,255,255);
-}
-
-#logoMenu {
+.menu__logo {
 	display: flex;
 	justify-content: right;
 	align-items: center;
@@ -144,52 +139,7 @@ body {
 	z-index: 90;
 }
 
-/* Propiedades de los H2 del MENU*/
-/*-----------------------------------------------------------------------------------*/
-
-.h2 {
-	position: relative;
-	z-index: 90;
-}
-
-.h2a {
-	text-decoration: none;
-}
-
-#h2{
-	display: flex;
-	justify-content: left;
-
-	font-size: 15px;
-	color: rgb(255,255,255);
-	border-bottom: 2px solid rgb(88, 88, 88);
-
-	padding-bottom: 7px;
-	padding-top: 7px;
-	-webkit-transition-duration: 0.5s;
-}
-
-/* Propiedades del LOGO y H1 */
-/*-----------------------------------------------------------------------------------*/
-
-.logo {
-	display: flex;
-	justify-content: center;
-
-	cursor: pointer;
-
-	width: 64%;
-	padding-right: 6px;
-}
-
-.h1Logo > p {
-	display: inline;
-	justify-content: center;
-
-	font-size: 40px;
-}
-
-.h1 > p {
+.logo__p {
 	display: inline;
 	justify-content: center;
 	position: relative;
@@ -200,20 +150,66 @@ body {
 	padding: 10px 0px;
 }
 
-#h1Flv, #h1FlvMenu {
+.logo__anime {
+	color: rgb(255,255,255);
+}
+
+#logo__flv-left {
+	margin-left: -10px;
+}
+
+/* Propiedades de las OPCIONES del MENU DESPLEGABLE */
+/* ----------------------------------------------------- */
+.menu__options {
+	position: relative;
+	z-index: 90;
+}
+
+.menu__links {
+	text-decoration: none;
+}
+
+.menu__h2 {
+	display: flex;
+	justify-content: left;
+
+	font-size: 15px;
+	color: rgb(255,255,255);
+	border-bottom: 2px solid rgb(88, 88, 88);
+
+	padding-bottom: 7px;
+	padding-top: 7px;
+	transition-duration: 0.5s;
+}
+
+/* Propiedades del LOGO CENTRAL del HEADER */
+/* ================================================= */
+.top__middle {
+	display: flex;
+	justify-content: center;
+
+	cursor: pointer;
+
+	width: 64%;
+	padding-right: 6px;
+}
+
+.logo__p-middle {
+	display: inline;
+	justify-content: center;
+
+	font-size: 40px;
+}
+
+.logo__flv {
 	color: rgb(34,222,250);
 
 	margin-left: -8px;
 }
 
-#h1FlvMenu {
-	margin-left: -10px;
-}
-
 /* Propiedades del LOGIN */
-/*-----------------------------------------------------------------------------------*/
-
-.h3 {
+/* ================================================= */
+.top__right {
 	display: flex;
 	justify-content: right;
 	align-items: center;
@@ -222,7 +218,15 @@ body {
 	padding-right: 10px;
 }
 
-#h3 {
+.right__login {
+	display: flex;
+
+	text-decoration: none;
+	color: rgb(255, 255, 255, 0.5);
+	transition-duration: 0.5s;
+}
+
+.login__h3 {
 	display: flex;
 	justify-content: center;
 
@@ -234,10 +238,10 @@ body {
 
 	width: 35px;
 	height: 35px;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-#iconProfile {
+.login__icon {
 	display: flex;
 	align-items: center;
 
@@ -245,7 +249,7 @@ body {
 	margin: 0px;
 }
 
-#loginProfile {
+.login__text {
 	display: none;
 
 	font-size: 15px;
@@ -253,15 +257,9 @@ body {
 	padding-top: 2px;
 }
 
-#linkLogin {
-	display: flex;
-
-	text-decoration: none;
-	color: rgb(255, 255, 255, 0.5);
-	-webkit-transition-duration: 0.5s;
-}
-
-.singInProfile {
+/* Propiedades del SINGIN */
+/* ================================================= */
+.right__singin {
 	display: none;
 	justify-content: center;
 	align-items: center;
@@ -271,23 +269,22 @@ body {
 	padding-left: 10px;
 }
 
-#singInProfile {
+.singin__text {
 	font-size: 18px;
 	letter-spacing: 1px;
 	color: rgb(255,175,0,0.7);
 
-	padding-top: 2px;
+	padding-top: 2.singin__textpx;
 }
 
-#singInProfile:hover {
+.singin__text:hover {
 	color: rgb(255,175,0,1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /* Propiedades del MENU de CONFIGURACION */
-/*-----------------------------------------------------------------------------------*/
-
-.settings {
+/* ================================================= */
+.right__settings {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -298,17 +295,17 @@ body {
 
 	width: 39px;
 	height: 39px;
-	-webkit-transition-duration: 0.5s;*/
+	transition-duration: 0.5s;*/
 }
 
-.sMenu {
+.right__container {
 	position: relative;
 
 	width: 100%;
 	height: 100%;
 }
 
-.iconsMenu {	
+.right__dropdown {	
 	position: absolute;
 	top: 0px;
 	left: 0px;
@@ -336,10 +333,12 @@ body {
 	width: 35px;
 	height: 35px;
 	z-index: 999;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-.settingsMenu {
+/* Propiedades del MENU DESPLEGABLE de CONFIGURACIÓN */
+/* ----------------------------------------------------- */
+.right__menu {
 	display: none;
 
 	position: absolute;
@@ -357,10 +356,10 @@ body {
 	padding-left: 15px;
 	padding-right: 15px;
 	z-index: 100;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-#logoSMenu {
+.menu__logo-right {
 	display: flex;
 	justify-content: left;
 	align-items: center;
@@ -376,23 +375,22 @@ body {
 	z-index: 90;
 }
 
-.settingsMenu > li > a > #h2 {
+.menu__h2 {
 	align-items: center;
 }
 
-.settingsMenu > li > a > #h2 > span {
+.menu__h2 span {
 	padding-right: 10px;
 }
 
 /* Propiedades de la BARRA DE BUSQUEDA */
-/*-----------------------------------------------------------------------------------*/
-
-.search {
+/* ================================================= */
+.header__middle {
 	width: 100%;
 	height: 50px;
 }
 
-.search-input-wrapper {
+.search__input-wrapper {
 	display: inline-flex;
 	position: absolute;
 	left: 10px;
@@ -404,10 +402,10 @@ body {
 	width: 77%;
 	height: 35px;
 	margin-top: 5px;
-	-webkit-transition-duration: 0.5s;	
+	transition-duration: 0.5s;	
 }
 
-.search-input {
+.search__input {
 	background: rgb(38,42,46);
 	color: rgb(255, 255, 255);
 	border: none;
@@ -419,7 +417,7 @@ body {
 	padding: 3px 0px 0px 10px;
 }
 
-.search-submit {
+.search__submit {
 	position: relative;
 
 	background: rgb(59,66,72);
@@ -430,7 +428,7 @@ body {
 
 	width: 45px;
 	height: 35px;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .icon-search {
@@ -440,15 +438,14 @@ body {
 }
 
 /* Propiedades del HEADER inferior */
-/*-----------------------------------------------------------------------------------*/
-
-#light {
+/* ================================================= */
+.header__light {
 	background: rgb(59,66,72);
 
 	height: 50px;
 }
 
-#dropdown {
+.header__bottom {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -463,7 +460,7 @@ body {
 /* Propiedades de las OPCIONES de animes */
 /*-----------------------------------------------------------------------------------*/
 
-.dropdownOptions {
+.section_wrapper {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -475,7 +472,7 @@ body {
 	padding-left: 10px;
 }
 
-.options {
+.section__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -488,11 +485,11 @@ body {
 	height: 40px;
 }
 
-.options > a {
+.section__link {
 	text-decoration: none;
 }
 
-.options a p {
+.section__p {
 	display: none;
 }
 
@@ -588,7 +585,7 @@ body {
 
 .iconFilterMenu {
 	justify-content: right;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .icon-filter {
@@ -607,7 +604,7 @@ body {
 	height: 30px;
 	margin: 0px 5px 1px 0px;
 	z-index: 999;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .filterMenu {
@@ -658,7 +655,7 @@ body {
 	width: 100%;
 	height: 30px;
 	padding-top: 10px;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .checks > span {
@@ -707,7 +704,7 @@ body {
 
 	width: 40px;
 	height: 98%;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 #containerButtonLeft {
@@ -737,7 +734,7 @@ body {
 
 	width: 100%;
 	height: 100%;
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .listAnimes {
@@ -852,76 +849,76 @@ body {
 /*-----------------------------------------------------------------------------------*/
 
 /* ACCIONES de la Barra de Búsqueda */
-.search-input-wrapper:hover {
+.search__inputWrapper:hover {
 	border: 2px solid rgb(34,222,250);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-.search-input-wrapper:hover .icon-search:before {
+.search__inputWrapper:hover .icon-search:before {
 	color: rgb(255,255,255,1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /* ACCIONES del BOTON de Login */
-#h3:hover {
+.login__h3:hover {
 	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
 	color: rgb(255, 255, 255, 1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-#h3:hover #linkLogin {
+.login__h3:hover .right__login {
 	color: rgb(255, 255, 255, 1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /*ACCIONES del BOTON de Configuración */
 .icon-more-vertical:hover {
 	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
 	color: rgb(255, 255, 255, 1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /* ACCIONES del BOTON del Menú */
 .icon-menu:hover {
 	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
 	color: rgb(255, 255, 255, 1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
-.h2a:hover #h2 {
+.menu__links:hover .menu__h2 {
 	border-bottom: 2px solid rgb(34,222,250);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /* ACCIONES de los BOTONES del HEADER LIGHT */
-.options:hover {
+.section__button:hover {
 	background: rgb(90,100,110);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /* ACCIONES del BOTON de los FILTROS */
 .icon-filter:hover {
 	box-shadow: 0px 0px 2px 2px rgb(34,222,250,1);
 	color: rgb(255, 255, 255, 1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .checks:hover {
 	border-bottom: 2px solid rgb(34,222,250);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 /* ACCIONES de los BOTONES de los SLIDERS */
 .containerButton:hover .sliderButton > span {
 	color: rgb(34,222,250,1);
 	text-shadow: 0px 0px 5px rgb(34,222,250);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 .containerButton:hover {
 	background: rgb(59,66,72,0.9);
 	border: 2px solid rgb(165,165,165,1);
-	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
 }
 
 
@@ -968,7 +965,7 @@ body {
 
 .icon-watch_later:before {
 	content: "\e903";
-	color: rgb(80,242,80);
+	color: rgb(50, 202, 50);
 	font-size: 20px;
 }
 
@@ -1060,58 +1057,58 @@ body {
 
 	/* Propiedades del MENU */
 	/*----------------------*/
-	.menu {
+	.top__left {
 		width: 30%;
 	}
 
 	/* Porpiedades del MENU DESPLEGABLE */
 	/*----------------------------------*/
-	.principalMenu {
+	.left__menu {
 		width: 245px;
 	}
 
 	/* Propiedades del LOGO y H1 */
 	/*---------------------------*/
-	.logo {
+	.top__middle {
 		width: 40%;
 	}
 
 	/* Propiedades del LOGIN */
 	/*-----------------------*/
-	.h3 {
+	.top__right {
 		width: 30%;
 	}
 
-	.singInProfile {
+	.right__singin {
 		display: flex;
 	}
 
 	/* Propiedades del BOTON de CONFIGURACIÓN */
 	/*----------------------------------------*/
-	/*.settings {
+	/*.right__settings {
 		position: relative;
 		top: 0;
 	}*/
 
 	/* Propiedades de la BARRA DE BUSQUEDA */
 	/*-------------------------------------*/
-	.search-input-wrapper {
+	.search__input-wrapper {
 		justify-content: center;
 		position: relative;
 		width: 350px;
 	}
 
-	.search-input-wrapper:focus-within {
+	.search__input-wrapper:focus-within {
 		width: 50%;
 	}
 
 	/* Propiedades de las OPCIONES de animes */
 	/*---------------------------------------*/
-	.options {
+	.section__button {
 		width: 130px;
 	}
 
-	.options > a {
+	.section__link {
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -1120,12 +1117,12 @@ body {
 		color: rgb(255, 255, 255);
 	}
 
-	.options a p {
+	.section__p {
 		display: flex;
 		padding: 3px 5px 0px 5px;;
 	}
 
-	.options > span {
+	.section__link > span {
 		padding-left: 5px;
 	}
 
@@ -1135,11 +1132,11 @@ body {
 /*-------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1024px){
 
-	#h3 {
+	.login__h3 {
 		width: 160px;
 	}
 
-	#loginProfile {
+	.login__text {
 		display: flex;
 		align-items: center;
 

@@ -1,50 +1,49 @@
 /* FUNCIÓN para el despliegue de los MENUS */
 
-var docPrincipalMenu = document.getElementById("principalMenu");
-var docSettingsMenu = document.getElementById("settingsMenu");
-var docIconSMenu = document.getElementById("icon-more-vertical");
-var docFilterMenu = document.getElementById("filterMenu");
+var leftMenu = document.getElementById("left__menu");
+var rightMenu = document.getElementById("right__menu");
+var iconRightMenu = document.getElementById("icon-more-vertical");
+var filterMenu = document.getElementById("filterMenu");
 
 
 
-function displayMenu() {
-	var displayPrincipalMenu = docPrincipalMenu.style.display;
-	var displaySettingsMenu = docSettingsMenu.style.display;
-	var displayFilterMenu = docFilterMenu.style.display;
+function displayLeftMenu() {
+	var displayLeftMenu = leftMenu.style.display;
+	var displayRightMenu = rightMenu.style.display;
+	var displayFilterMenu = filterMenu.style.display;
 
-	if (displayPrincipalMenu == "none" || displayPrincipalMenu == "") {
-		 docPrincipalMenu.style.display = "block";
+	if (displayLeftMenu == "none" || displayLeftMenu == "") {
+		 leftMenu.style.display = "block";
+	} else {
+		 leftMenu.style.display = "none";
 	}
-	else {
-		 docPrincipalMenu.style.display = "none";
-	}
 
-	if (displaySettingsMenu == "block") {
-		docSettingsMenu.style.display = "none";
-		docIconSMenu.style.top = "0px";
+	if (displayRightMenu == "block") {
+		rightMenu.style.display = "none";
+		iconRightMenu.style.top = "0px";
 	}
 
 	if (displayFilterMenu == "block") {
-		docFilterMenu.style.display = "none";
+		filterMenu.style.display = "none";
 	}
 }
 
-function displaySettingsMenu() {
-	var displayPrincipalMenu = docPrincipalMenu.style.display;
-	var displaySettingsMenu = docSettingsMenu.style.display;
-	var displayFilterMenu = docFilterMenu.style.display;
+function displayRightMenu() {
+	var displayLeftMenu = leftMenu.style.display;
+	var displayRightMenu = rightMenu.style.display;
+	var displayFilterMenu = filterMenu.style.display;
 
-	if (displaySettingsMenu == "none" || displaySettingsMenu == "") {
-		 docSettingsMenu.style.display = "block";
-		 docIconSMenu.style.top = "-62px";
+	if (displayRightMenu == "none" || displayRightMenu == "") {
+		 rightMenu.style.display = "block";
+		 iconRightMenu.style.top = "-62px";
 	}
 	else {
-		 docSettingsMenu.style.display = "none";
-		 docIconSMenu.style.top = "0px";
+		 rightMenu.style.display = "none";
+		 iconRightMenu.style.top = "0px";
 	}
 
-	if (displayPrincipalMenu == "block") {
-		docPrincipalMenu.style.display = "none";
+	if (displayLeftMenu == "block") {
+		leftMenu.style.display = "none";
 	}
 
 	if (displayFilterMenu == "block") {
@@ -53,24 +52,24 @@ function displaySettingsMenu() {
 }
 
 function displayFilterMenu() {
-	var displayPrincipalMenu = docPrincipalMenu.style.display;
-	var displaySettingsMenu = docSettingsMenu.style.display;
-	var displayFilterMenu = docFilterMenu.style.display;
+	var displayLeftMenu = leftMenu.style.display;
+	var displayRightMenu = rightMenu.style.display;
+	var displayFilterMenu = filterMenu.style.display;
 
 	if (displayFilterMenu == "none" || displayFilterMenu == "") {
-		 docFilterMenu.style.display = "block";
+		 filterMenu.style.display = "block";
 	}
 	else {
-		 docFilterMenu.style.display = "none";
+		 filterMenu.style.display = "none";
 	}
 
-	if (displayPrincipalMenu == "block") {
-		docPrincipalMenu.style.display = "none";
+	if (displayLeftMenu == "block") {
+		leftMenu.style.display = "none";
 	}
 	
-	if (displaySettingsMenu == "block") {
-		docSettingsMenu.style.display = "none";
-		docIconSMenu.style.top = "0px";
+	if (displayRightMenu == "block") {
+		rightMenu.style.display = "none";
+		iconRightMenu.style.top = "0px";
 	}
 }
 
