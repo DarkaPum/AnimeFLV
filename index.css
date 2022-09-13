@@ -527,8 +527,8 @@ body {
 	left: 0px;
 
 	width: 100%;
-	height: 31%;
-	margin: 0px 5%;
+	height: 25%;
+	margin: 0px 2%;
 }
 
 .keepWatching__div {
@@ -703,6 +703,7 @@ body {
 
 	width: 10px;
 	height: 100%;
+	margin: 0px 2%;
 	transition-duration: 0.2s;
 	z-index: 10;
 }
@@ -745,7 +746,7 @@ body {
 	align-items: center;
 	position: relative;
 
-	width: 500%;
+	width: 400%;
 	height: 100%;
 
 	transition: all .5s ease;
@@ -784,7 +785,7 @@ body {
 
 	width: 100%;
 	height: 100%;
-	transition-duration: 0.1s;
+	transition-duration: 0.2s;
 }
 
 .anime__more {
@@ -812,7 +813,6 @@ body {
 	align-items: flex-end;
 	text-align: left;
 	position: relative;
-	bottom: -30px;
 
 	width: 100%;
 	padding: 5px;
@@ -824,16 +824,16 @@ body {
 	position: relative;
 	top: 100%;
 
-	font-size: .9em;
+	font-size: .8em;
 
 	width: 100%;
 	height: 20px;
-	padding-top: 10px;
+	padding-top: 5px;
 }
 
 .anime__state {
 	display: flex;
-	justify-content: left;
+	justify-content: center;
 	align-items: top;
 	position: absolute;
 	
@@ -842,8 +842,7 @@ body {
 	
 	width: 100%;
 	height: 100%;
-	padding-top: 5px;
-	padding-left: 10px;
+	padding-top: 4px;
 }
 
 
@@ -1080,14 +1079,37 @@ body {
 /* Configuración específica para pantallas hasta 425px de ancho como máximo (Mobile L). */
 /*--------------------------------------------------------------------------------------*/
 @media screen and (min-width: 425px){
+	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+	/*-------------------------------------------*/
+	.section__keepWatching {
+		margin: 0% 1%;
+	}
+
+	.keepWatching__header {
+		margin: 10px 0px 10px 10px;
+	}
+
+	.keepWatching__list {
+		width: 350%;
+	}
+
+	.anime__div {
+		font-size: .9em;
+	}
+
+	.viewMore {
+		font-size: 1.1em;
+	}
+
+	.plus {
+		font-size: 2.2em;
+	}
 
 }
 
 /* Configuración específica para pantallas hasta 768px de ancho como máximo (Tablet). */
 /*------------------------------------------------------------------------------------*/
-
 @media screen and (min-width: 768px){
-
 	/* Propiedades del MENU */
 	/*----------------------*/
 	.top__left {
@@ -1174,7 +1196,7 @@ body {
 	}
 
 	.keepWatching__list {
-		width: 350%;
+		width: 300%;
 	}
 
 	.keepWatching__button {
@@ -1223,7 +1245,7 @@ body {
 	/*-------------------------------------------*/
 
 	.keepWatching__list {
-		width: 200%;
+		width: 165%;
 	}
 
 	.viewMore {
@@ -1234,6 +1256,10 @@ body {
 		font-size: 3em;
 	}
 
+	.anime__div {
+		font-size: 1em;
+	}
+
 }
 
 /* Configuración específica para pantallas hasta 1680px de ancho como máximo (Desktop). */
@@ -1242,7 +1268,7 @@ body {
 	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
 	/*-------------------------------------------*/
 	.keepWatching__list {
-		width: 165%;
+		width: 135%;
 	}
 
 	.viewMore {
@@ -1252,6 +1278,10 @@ body {
 	.plus {
 		font-size: 4em;
 	}
+
+	.anime__div {
+		font-size: 1.2em;
+	}
 }
 
 /* Configuración específica para pantallas hasta 1920px de ancho como máximo (Desktop). */
@@ -1260,7 +1290,7 @@ body {
 	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
 	/*-------------------------------------------*/
 	.keepWatching__list {
-		width: 135%;
+		width: 110%;
 	}
 }
 
@@ -1270,6 +1300,6 @@ body {
 	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
 	/*-------------------------------------------*/
 	.keepWatching__list {
-		width: 100%;
+		width: 85%;
 	}
 }
