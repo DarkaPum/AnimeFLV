@@ -10,7 +10,7 @@ var filterMenu = document.getElementById("filterMenu");
 function displayLeftMenu() {
 	var displayLeftMenu = leftMenu.style.display;
 	var displayRightMenu = rightMenu.style.display;
-	var displayFilterMenu = filterMenu.style.display;
+	/*var displayFilterMenu = filterMenu.style.display;*/
 
 	if (displayLeftMenu == "none" || displayLeftMenu == "") {
 		 leftMenu.style.display = "block";
@@ -23,15 +23,15 @@ function displayLeftMenu() {
 		iconRightMenu.style.top = "0px";
 	}
 
-	if (displayFilterMenu == "block") {
+	/*if (displayFilterMenu == "block") {
 		filterMenu.style.display = "none";
-	}
+	}*/
 }
 
 function displayRightMenu() {
 	var displayLeftMenu = leftMenu.style.display;
 	var displayRightMenu = rightMenu.style.display;
-	var displayFilterMenu = filterMenu.style.display;
+	/*var displayFilterMenu = filterMenu.style.display;*/
 
 	if (displayRightMenu == "none" || displayRightMenu == "") {
 		 rightMenu.style.display = "block";
@@ -46,11 +46,11 @@ function displayRightMenu() {
 		leftMenu.style.display = "none";
 	}
 
-	if (displayFilterMenu == "block") {
-		docFilterMenu.style.display = "none";
-	}
+	/*if (displayFilterMenu == "block") {
+		filterMenu.style.display = "none";
+	}*/
 }
-
+/*
 function displayFilterMenu() {
 	var displayLeftMenu = leftMenu.style.display;
 	var displayRightMenu = rightMenu.style.display;
@@ -72,7 +72,7 @@ function displayFilterMenu() {
 		iconRightMenu.style.top = "0px";
 	}
 }
-
+*/
 
 /* FUNCIÓN para mostrar los diferentes SECTIONS (Home, Follow, Fav, SeeLater, More) */
 
@@ -97,43 +97,51 @@ function navSection(nav) {
 	}
 }
 
-function displaySection(nav) {
-	var sections = new Array(10);
-	sections[0] = "first";
-	sections[1] = "second";
-	sections[2] = "third";
-	sections[3] = "fourth";
-	sections[4] = "fifth";
-	sections[5] = "sixth";
-	sections[6] = "seventh";
-	sections[7] = "eighth";
-	sections[8] = "nineth";
-	sections[9] = "tenth";
+/* FUNCIÓN para el SLIDER de SEGUIR VIENDO. */
 
-	var search;
-	var show;
+var keepWatching__list = document.getElementById("keepWatching__list");
+var prev__keepWatching = document.getElementById("prev__keepWatching");
 
-	for (var i=0; i<10; i++) {
-		search = document.getElementById(sections[i]);
-		show = search.style.display;
+function keepWatching__next() {
+	var translateXnext = keepWatching__list.style.transform;
+	var displayPrev = prev__keepWatching.style.display;
 
-		if (show == "block" || show == "") {
-			search.style.display = "none";
-			if (nav == 'next') {
-				i++;
-				if (i>9) {
-					i=0;
-				}				
-			}
-			if (nav == 'prev') {
-				i--;
-				if (i<0) {
-					i=9;
-				}				
-			}
-			search = document.getElementById(sections[i]);
-			search.style.display = "block";
-			break;
-		}
+	if (translateXnext == "translateX(0%)" || translateXnext == ""){
+		keepWatching__list.style.transform = "translateX(-20%)";
+		prev__keepWatching.style.display = "flex";
+	}
+	if (translateXnext == "translateX(-20%)"){
+		keepWatching__list.style.transform = "translateX(-40%)";
+	}
+	if (translateXnext == "translateX(-40%)"){
+		keepWatching__list.style.transform = "translateX(-60%)";
+	}
+	if (translateXnext == "translateX(-60%)"){
+		keepWatching__list.style.transform = "translateX(-80%)";
+	}
+	if (translateXnext == "translateX(-80%)"){
+		keepWatching__list.style.transform = "translateX(0%)";
+		prev__keepWatching.style.display = "none";
 	}
 }
+
+function keepWatching__prev() {
+	var translateXprev = keepWatching__list.style.transform;
+	var displayPrev = prev__keepWatching.style.display;
+
+	if (translateXprev == "translateX(-80%)"){
+		keepWatching__list.style.transform = "translateX(-60%)";
+	}
+	if (translateXprev == "translateX(-60%)"){
+		keepWatching__list.style.transform = "translateX(-40%)";
+	}
+	if (translateXprev == "translateX(-40%)"){
+		keepWatching__list.style.transform = "translateX(-20%)";
+	}
+	if (translateXprev == "translateX(-20%)"){
+		keepWatching__list.style.transform = "translateX(0%)";
+		prev__keepWatching.style.display = "none";
+	}
+}
+
+

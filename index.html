@@ -161,13 +161,11 @@
 				</form>
 			</div>
 		</div>
-
 	</div>
 
-	<div class="header__light">
-
+	<!-- <div class="header__light">
 		<div class="header__bottom section">
-			<div class="section_wrapper">
+			<div class="section__wrapper">
 
 				<div class="section__button" id="option1" onclick="navSection('SHome')">
 					<a class="section__link" href="#">
@@ -206,50 +204,180 @@
 
 			</div>
 		</div>
-
-	</div>
+	</div> -->
 </header>
 
 
+<main>
+	<div class="div__main">
+		<section class="section__keepWatching">
+			<div class="keepWatching__div">
 
-	<div class="selector">
-		<section class="selected" id="SHome">
+				<div class="keepWatching__header">
+					<div class="keepWatching__tittle">
+						<h4 class="keepWatching__h4">
+							Seguir viendo
+							<span class="icon-chevron-right"></span>
+						</h4>
+					</div>
+				</div>
 
+				<div class="keepWatching__body">
+					<div class="keepWatching__nav">
 
+						<div class="keepWatching__button button" id="prev__keepWatching" onclick="keepWatching__prev()">
+							<div class="button__slider">
+								<span class="icon-chevron-left"></span>
+							</div>
+						</div>
 
-			<div class="lastEPBody">
+						<div class="keepWatching__button button" id="next__keepWatching" onclick="keepWatching__next()">
+							<div class="button__slider">
+								<span class="icon-chevron-right"></span>
+							</div>
+						</div>
 
-				<div class="lastEPHead">
+						<div class="keepWatching__list list" id="keepWatching__list">
 
-					<div id="LastEPHeadTittle">
-						<h4 class="h4">Últimos episodios agregados</h4>
+							<div class="list__anime anime" id="1">
+								<img class="anime__img" src="img\animes\bleach.jpg" alt="Bleach">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Bleach</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="2">
+								<img class="anime__img" src="img\animes\boku-no-hero-academia.jpg" alt="Boku no hero Academia">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Boku no hero Academia</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="3">
+								<img class="anime__img" src="img\animes\boruto.jpg" alt="Boruto">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Boruto</span>
+									</div>
+									<span class="anime__state">En emisión</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="4">
+								<img class="anime__img" src="img\animes\dragon-ball-z.jpg" alt="Dragon Ball Z">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Dragon Ball Z</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="5">
+								<img class="anime__img" src="img\animes\dr-stone.jpg" alt="Dr.Stone">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Dr.Stone</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="6">
+								<img class="anime__img" src="img\animes\hunter-x-hunter.jpg" alt="Hunter X Hunter">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Hunter X Hunter</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="7">
+								<img class="anime__img" src="img\animes\one-piece.jpg" alt="One Piece">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">One Piece</span>
+									</div>
+									<span class="anime__state">En emisión</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="8">
+								<img class="anime__img" src="img\animes\spy-x-family.jpg" alt="Spy x Family">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Spy x Family</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="9">
+								<img class="anime__img" src="img\animes\naruto.jpg" alt="Naruto">
+								<div class="anime__info">
+									<div class="anime__div">
+										<span class="anime__divName">Naruto</span>
+									</div>
+									<span class="anime__state">Finalizado</span>
+								</div>
+							</div>
+
+							<div class="list__anime anime" id="10">
+								<div class="anime__more">
+									<span class="plus">+</span>
+									<span class="viewMore">Ver más</span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+		
+		<!-- <section class="section__lastEpisodes">
+			<div class="lastEpisodes__div">
+
+				<div class="lastEpisodes__header">
+
+					<div class="lastEpisodes__tittle">
+						<h4 class="lastEpisodes__h4">Seguir viendo</h4>
 					</div>
 
-					<div id="lastEPHeadFilter">
-						<ul class="filterMenus">
-							<li id="iconFilterMenu" class="iconFilterMenu">
+					<div class="lastEpisodes__filter divFilter">
+						<ul class="divFilter__ul">
+							<li class="divFilter__li">
 
-								<figure  onclick="displayFilterMenu()">
+								<figure class="divFilter__figure" onclick="displayFilterMenu()">
 									<span id="icon-filter" class="icon-filter"></span>
 								</figure>
 
-								<ul id="filterMenu" class="filterMenu">
+								<ul class="divFilter__menu filterMenu" id="filterMenu">
 
-									<div id="filterMenuTittle">
-										<p id="filterMenuP">AGREGADOS:</p>
+									<div class="filterMenu__tittle">
+										<p id="filterMenu__p">AGREGADOS:</p>
 									</div>
 
-									<li id="today" class="checks">
+									<li class="filterMenu__check">
 										<input id='checkToday' name='checkToday' type='checkbox'/>
 										<span>Hoy</span>
 									</li>
 									
-									<li id="lastWeek" class="checks">
+									<li class="filterMenu__check">
 										<input id='checkLastWeek' name='checkLastWeek' type='checkbox'/>
 										<span>Última semana</span>
 									</li>
 
-									<li id="lastMonth" class="checks">
+									<li class="filterMenu__check">
 										<input id='checkLastMonth' name='checkLastMonth' type='checkbox'/>
 										<span>Último mes</span>
 									</li>
@@ -261,167 +389,108 @@
 
 				</div>
 
-				<div class="lastEPAnimes">
+				<div class="lastEpisodes__body">
 
-					<div class="containerAnimes">
+					<div class="lastEpisodes__nav">
 
-						<div id="containerButtonLeft" class="containerButton" onclick="displaySection('prev')">
-							<div id="sliderButtonLeft" class="sliderButton">
+						<div class="lastEpisodes__button button" id="prev" onclick="displaySection('prev')">
+							<div class="button__slider">
 								<span class="icon-chevron-left"></span>
 							</div>
 						</div>
 
-						<ul class="listAnimes">
-
-							<section class="slideLastEp" id="first">
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/1-Digimon-Ghost-Game-ep31.jpg" alt="Digimon-Ghost-Game-ep31">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Digimon Ghost Game</span>
-										<span class="infoBottomEp">Ep.31</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="second">
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/2-Kindom-4th-Season-ep12.jpg" alt="Kindom-4th-Season-ep12">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Kindom 4th Season</span>
-										<span class="infoBottomEp">Ep.12</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="third">
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/3-Kawaii-dake-ja-Nai-Shikimorisan-ep10.jpg" alt="Kawaii-dake-ja-Nai-Shikimorisan-ep10">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Kawaii dake ja Nai Shikimorisan</span>
-										<span class="infoBottomEp">Ep.10</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="fourth">	
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/4-Kakkou-no-linazuke-ep10.jpg" alt="Kakkou-no-linazuke-ep10">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Kakkou no linazuke</span>
-										<span class="infoBottomEp">Ep.10</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="fifth">
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/5-Build-Divide-Code-White-ep12.jpg" alt="Build-Divide-Code-White-ep12">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Build Divide Code White </span>
-										<span class="infoBottomEp">Ep.12</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="sixth">	
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/6-Kunoichi-Tsubaki-no-mune-no-ichi-ep12.jpg" alt="Kunoichi-Tsubaki-no-mune-no-ichi-ep12">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Kunoichi Tsubaki no mune no ichi</span>
-										<span class="infoBottomEp">Ep.12</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="seventh">
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/7-Gunjou-no-Fanfare-ep13.jpg" alt="Gunjou-no-Fanfare-ep13">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Gunjou no Fanfare</span>
-										<span class="infoBottomEp">Ep.13</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="eighth">	
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/8-Spy-x-Family-ep12.jpg" alt="Spy-x-Family-ep12">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Spy x Family</span>
-										<span class="infoBottomEp">Ep.12</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="nineth">
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/9-Love-Live-Nijigasaki-gakuen-school-idol-doukoukai-ep13.jpg" alt="Love-Live-Nijigasaki-gakuen-school-idol-doukoukai-ep13">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Love Live Nijigasaki gakuen school idol doukoukai</span>
-										<span class="infoBottomEp">Ep.13</span>
-									</div>
-								</li>
-							</section>
-
-							<section class="slideLastEp" id="tenth">	
-								<li class="frontPage">
-									<figure class="imgAnime">
-										<img src="img/lastEpisodes/10-Ao-Ashi-ep12.jpg" alt="Ao-Ashi-ep12">
-									</figure>
-
-									<div class="infoBottom">
-										<span class="infoBottomAnime">Ao Ashi</span>
-										<span class="infoBottomEp">Ep.12</span>
-									</div>
-								</li>
-							</section>
-								
-						</ul>
-
-						<div id="containerButtonRight" class="containerButton" onclick="displaySection('next')">
-							<div id="sliderButtonRight" class="sliderButton">
+						<div class="lastEpisodes__button button" id="next" onclick="displaySection('next')">
+							<div class="button__slider">
 								<span class="icon-chevron-right"></span>
 							</div>
 						</div>
 
+						<div class="lastEpisodes__list list">
+
+							<div class="list__episode episode" id="first">
+								<img class="episode__img" src="img/lastEpisodes/1-Digimon-Ghost-Game-ep31.jpg" alt="Digimon-Ghost-Game-ep31">
+								<div class="episode__info">
+									<span class="episode__anime">Digimon Ghost Game</span>
+									<span class="episode__number">Ep.31</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="second">
+								<img class="episode__img" src="img/lastEpisodes/2-Kindom-4th-Season-ep12.jpg" alt="Kindom-4th-Season-ep12">
+								<div class="episode__info">
+									<span class="episode__anime">Kindom 4th Season</span>
+									<span class="episode__number">Ep.12</span>
+								</div>	
+							</div>
+
+							<div class="list__episode episode" id="third">
+								<img class="episode__img" src="img/lastEpisodes/3-Kawaii-dake-ja-Nai-Shikimorisan-ep10.jpg" alt="Kawaii-dake-ja-Nai-Shikimorisan-ep10">
+								<div class="episode__info">
+									<span class="episode__anime">Kawaii dake ja Nai Shikimorisan</span>
+									<span class="episode__number">Ep.10</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="fourth">
+								<img class="episode__img" src="img/lastEpisodes/4-Kakkou-no-linazuke-ep10.jpg" alt="Kakkou-no-linazuke-ep10">
+								<div class="episode__info">
+									<span class="episode__anime">Kakkou no linazuke</span>
+									<span class="episode__number">Ep.10</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="fifth">
+								<img class="episode__img" src="img/lastEpisodes/5-Build-Divide-Code-White-ep12.jpg" alt="Build-Divide-Code-White-ep12">
+								<div class="episode__info">
+									<span class="episode__anime">Build Divide Code White </span>
+									<span class="episode__number">Ep.12</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="sixth">
+								<img class="episode__img" src="img/lastEpisodes/6-Kunoichi-Tsubaki-no-mune-no-ichi-ep12.jpg" alt="Kunoichi-Tsubaki-no-mune-no-ichi-ep12">
+								<div class="episode__info">
+									<span class="episode__anime">Kunoichi Tsubaki no mune no ichi</span>
+									<span class="episode__number">Ep.12</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="seventh">
+								<img class="episode__img" src="img/lastEpisodes/7-Gunjou-no-Fanfare-ep13.jpg" alt="Gunjou-no-Fanfare-ep13">
+								<div class="episode__info">
+									<span class="episode__anime">Gunjou no Fanfare</span>
+									<span class="episode__number">Ep.13</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="eighth">
+								<img class="episode__img" src="img/lastEpisodes/8-Spy-x-Family-ep12.jpg" alt="Spy-x-Family-ep12">
+								<div class="episode__info">
+									<span class="episode__anime">Spy x Family</span>
+									<span class="episode__number">Ep.12</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="nineth">
+								<img class="episode__img" src="img/lastEpisodes/9-Love-Live-Nijigasaki-gakuen-school-idol-doukoukai-ep13.jpg" alt="Love-Live-Nijigasaki-gakuen-school-idol-doukoukai-ep13">
+								<div class="episode__info">
+									<span class="episode__anime">Love Live Nijigasaki gakuen school idol doukoukai</span>
+									<span class="episode__number">Ep.13</span>
+								</div>
+							</div>
+
+							<div class="list__episode episode" id="tenth">
+								<img class="episode__img" src="img/lastEpisodes/10-Ao-Ashi-ep12.jpg" alt="Ao-Ashi-ep12">
+								<div class="episode__info">
+									<span class="episode__anime">Ao Ashi</span>
+									<span class="episode__number">Ep.12</span>
+								</div>
+							</div>
+						</div>
 					</div>
-
 				</div>
-
 			</div>
-		</section>
-
-
-
-
-
+		</section> -->
 
 		<section class="slide" id="SFollow"></section>
 
@@ -432,7 +501,7 @@
 		<section class="slide" id="SMore"></section>
 	</div>
 
-
+</main>
 
 <footer>
 </footer>

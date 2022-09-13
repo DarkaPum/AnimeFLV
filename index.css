@@ -20,9 +20,14 @@
 /* Propiedades del BODY */
 /* ===================================================== */
 body {
-	background: rgb(225,234,242);
+	background: linear-gradient(180deg, 
+				rgba(38, 42, 46, 1) 50%, 
+				rgba(88, 88, 88, 1) 100%),
+				rgba(88, 88, 88);
+	background-repeat: no-repeat;
 	font-family: balsamiqsans;
 	text-align: center;
+	overflow-x: hidden;
 
 	width: 100%;
 	height: 100vh;
@@ -460,7 +465,7 @@ body {
 /* Propiedades de las OPCIONES de animes */
 /*-----------------------------------------------------------------------------------*/
 
-.section_wrapper {
+.section__wrapper {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -505,63 +510,60 @@ body {
 /* Propiedades del SLIDER y los SECTIONS */
 /*-----------------------------------------------------------------------------------*/
 
-.selector {
-	position: fixed;
+.div__main {
+	display: flex;
+	justify-items: center;
+	position: relative;
 
 	width: 100%;
 	height: 100vh;
 }
 
-.selected {
-	display: none;
+.section__keepWatching {
+	display: flex;
+	justify-content: center;
 	position:relative;
 	top: 0px;
 	left: 0px;
 
 	width: 100%;
-	height: 100%;
+	height: 31%;
+	margin: 0px 5%;
 }
 
-#SHome {
-	display: block;
-}
-
-.lastEPBody {
+.keepWatching__div {
 	position: relative;
-	left: 3%;
 
-	width: 94%;
+	width: 100%;
 	height: 100%;
 }
 
-.lastEPHead {
+.keepWatching__header {
 	display: flex;
 	justify-content: space-between;
 	text-align: center;
 	align-items: center;
 	position: relative;
 
-	border-bottom: 2px solid rgb(165,165,165);
-
 	width: 100%;
-	height: 40px;
-	margin: 10px 0px;
+	height: 35px;
+	margin: 5px 0px 0px 5px;
 }
 
-.h4 {
-	font-size: 18px;
-	color: rgb(38,42,46);
+.keepWatching__h4 {
+	font-size: 1em;
+	color: rgb(255, 255, 255);
+	letter-spacing: 1px;
 
 	width: 100%;
-	padding-top: 10px;
-	padding-left: 5px;
 	z-index: 999;
+	transition-duration: 0.1s;
 }
 
 /* Propiedades del BOTON y MENU para FILTRAR */
 /*-----------------------------------------------------------------------------------*/
-
-#lastEPHeadFilter {
+/*
+.lastEpisodes__filter {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -572,7 +574,7 @@ body {
 	height: 100%;
 }
 
-.filterMenus, .iconFilterMenu, .iconFilterMenu > figure {
+.divFilter__ul, .divFilter__li, .divFilter__figure {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -583,7 +585,7 @@ body {
 	margin: 0px;
 }
 
-.iconFilterMenu {
+.divFilter__li {
 	justify-content: right;
 	transition-duration: 0.5s;
 }
@@ -627,7 +629,7 @@ body {
 	z-index: 100;
 }
 
-#filterMenuTittle {
+.filterMenu__tittle {
 	display: flex;
 	align-items: center;
 	position: absolute;
@@ -638,12 +640,12 @@ body {
 	height: 41px;
 }
 
-#filterMenuP {
+#filterMenu__p {
 	letter-spacing: 1px;
 	padding-top: 3px;
 }
 
-.checks {
+.filterMenu__check {
 	display: flex;
 	flex-direction: row;
 	text-align: right;
@@ -658,11 +660,11 @@ body {
 	transition-duration: 0.5s;
 }
 
-.checks > span {
+.filterMenu__check > span {
 	padding-top: 3px;
 }
 
-.checks > input {
+.filterMenu__check > input {
 	display: block;
 	justify-content: center;
 
@@ -671,147 +673,177 @@ body {
 	margin-bottom: 10px;
 }
 
+*/
+/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+/*-----------------------------------------------------------------------------------*/
 
-
-
-.lastEPAnimes {
-	display: block;
+.keepWatching__body {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+	position: relative;
 
 	width: 100%;
 	height: 100%;
 }
 
-.containerAnimes {
-	display: flex;
-	position: relative;
-
-	background: rgb(255,255,255);
-	border-radius: 5px;
-
+.keepWatching__nav {
 	width: 100%;
-	height: 170px;
+	height: 100%;
+	margin-right: 60px;
 }
 
-.containerButton {
+.keepWatching__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	position: absolute;
-
-	background: rgb(59,66,72,0.3);
-	border: 2px solid rgb(165,165,165,0.5);
 	user-select: none;
 
-	width: 40px;
-	height: 98%;
-	transition-duration: 0.5s;
+	width: 10px;
+	height: 100%;
+	transition-duration: 0.2s;
+	z-index: 10;
 }
 
-#containerButtonLeft {
+#prev__keepWatching {
+	display: none;
 	left: 0px;
 	border-radius: 5px 0px 0px 5px;
 }
 
-#containerButtonRight {
+#next__keepWatching {
 	right: 0px;
 	border-radius: 0px 5px 5px 0px;
 }
 
-.sliderButton {
+.button__slider {
 	position: relative;
 
-	width: 31px;
-	height: 46px;
+	width: 50px;
+	height: 100%;
 }
 
-.sliderButton > span {
+.button__slider > span {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
-	font-size: 40px;
-	color: rgb(34,222,250,0.5);
+	font-size: 50px;
+	color: rgb(255, 255, 255, 0.6);
 
-	width: 100%;
+	width: 50px;
 	height: 100%;
-	transition-duration: 0.5s;
+	transition-duration: 0.2s;
 }
 
-.listAnimes {
-	list-style: none;
+.keepWatching__list {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 
-	width: 100%;
+	width: 500%;
 	height: 100%;
-	padding: 0px;
-	margin: 0px;
+
+	transition: all .5s ease;
+	transform: translateX(0%);
 }
 
-.slideLastEp {
-	display: none;
-	position: absolute;
-	top: 10px;
-	left: 54px;
+.list__anime {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
 
-	width: 190px;
-	height: 150px;
+	width: calc(100%/5);
+	height: 100%;
+	margin: 0% 0.5%;
 }
 
-#first {
-	display: block;
-}
+.anime__img {
+	display: flex;
+	position: relative;
 
-.imgAnime > img {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-
-	border: 2px solid rgb(255,175,0);
-	border-radius: 5px;
+	border-radius: 1px;
 	box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.3);
 
-	width: 190px;
-	height: 150px;
+	width: 100%;
+	height: 100%;
 }
 
-.infoBottom {
-	text-align: left;
-	position: absolute;
-	bottom: -2px;
-	right: -2px;
-
-	color: rgb(255, 255, 255);
-	box-shadow: inset 0px -50px 40px 0px rgb(0,0,0,0.7);
-
-	width: 190px;
-	height: 150px;
-}
-
-.infoBottomAnime {
-	position: absolute;
-	bottom: -5px;
-
-	font-size: 14px;
-
-	padding: 5px;
-	padding-bottom: 10px;
-}
-
-.infoBottomEp {
+.anime__info {
 	display: flex;
 	justify-content: center;
-	align-items: center;
 	position: absolute;
-	top: 0px;
-	right: 0px;
-	
-	background: rgb(255,175,0);
-	border-radius: 5px;
-	font-size: 12px;
-	color: rgb(0, 0, 0);
 
-	width: 60px;
-	height: 15px;
-	margin: 3px;
+	color: rgb(255, 255, 255);
+	box-shadow: inset 0px 25px 10px 0px rgb(0,0,0,0.6);
+
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.1s;
+}
+
+.anime__more {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	background-color: rgb(47, 53, 58);
+	color: rgb(255, 255, 255);
+	border: 2px solid rgb(88, 88, 88);
+	border-radius: 2px;
+
+	width: 100%;
+	height: 100%;
+}
+
+.plus {
+	width: 100%;
+	height: 25%;
+}
+
+.anime__name {
+	display: flex;
+	align-items: flex-end;
+	text-align: left;
+	position: relative;
+	bottom: -30px;
+
+	width: 100%;
+	padding: 5px;
+}
+
+.anime__div {
+	display: flex;
+	text-align: left;
+	position: relative;
+	top: 100%;
+
+	font-size: .9em;
+
+	width: 100%;
+	height: 20px;
+	padding-top: 10px;
+}
+
+.anime__state {
+	display: flex;
+	justify-content: left;
+	align-items: top;
+	position: absolute;
+	
+	font-size: .7em;
+	color: rgb(255, 255, 255);
+	
+	width: 100%;
+	height: 100%;
+	padding-top: 5px;
+	padding-left: 10px;
 }
 
 
@@ -903,22 +935,23 @@ body {
 	transition-duration: 0.5s;
 }
 
-.checks:hover {
+.filterMenu__check:hover {
 	border-bottom: 2px solid rgb(34,222,250);
 	transition-duration: 0.5s;
 }
 
-/* ACCIONES de los BOTONES de los SLIDERS */
-.containerButton:hover .sliderButton > span {
-	color: rgb(34,222,250,1);
-	text-shadow: 0px 0px 5px rgb(34,222,250);
-	transition-duration: 0.5s;
+/* ACCIONES de SEGUIR VIENDO */
+.button__slider > span:hover {
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px rgb(88, 88, 88), 
+				-1px -1px rgb(88, 88, 88),
+				1px -1px rgb(88, 88, 88),
+				-1px 1px rgb(88, 88, 88);
 }
 
-.containerButton:hover {
-	background: rgb(59,66,72,0.9);
-	border: 2px solid rgb(165,165,165,1);
-	transition-duration: 0.5s;
+.anime__info:hover {
+	border: 2px solid rgb(255,175,0);
+	border-radius: 3px;
 }
 
 
@@ -1126,6 +1159,44 @@ body {
 		padding-left: 5px;
 	}
 
+	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+	/*-------------------------------------------*/
+	.section__keepWatching {
+		margin: 0% 1%;
+	}
+
+	.keepWatching__header {
+		margin: 10px 0px 10px 10px;
+	}
+
+	.keepWatching__h4 {
+		font-size: 1.2em;
+	}
+
+	.keepWatching__list {
+		width: 350%;
+	}
+
+	.keepWatching__button {
+		margin: 0px 20px;
+	}
+
+	.viewMore {
+		font-size: 1.8em;
+	}
+
+	.plus {
+		font-size: 4em;
+	}
+
+	.anime__div {
+		font-size: 1.2em;
+	}
+
+	.anime__state {
+		font-size: .9em;
+	}
+
 }
 
 /* Configuración específica para pantallas hasta 1024px de ancho como máximo (Laptop). */
@@ -1148,16 +1219,57 @@ body {
 		padding-left: 4px;
 	}
 
+	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+	/*-------------------------------------------*/
+
+	.keepWatching__list {
+		width: 200%;
+	}
+
+	.viewMore {
+		font-size: 1.5em;
+	}
+
+	.plus {
+		font-size: 3em;
+	}
+
 }
 
 /* Configuración específica para pantallas hasta 1680px de ancho como máximo (Desktop). */
 /*--------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1680px){
+	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+	/*-------------------------------------------*/
+	.keepWatching__list {
+		width: 165%;
+	}
 
+	.viewMore {
+		font-size: 1.8em;
+	}
+
+	.plus {
+		font-size: 4em;
+	}
 }
 
 /* Configuración específica para pantallas hasta 1920px de ancho como máximo (Desktop). */
 /*--------------------------------------------------------------------------------------*/
 @media screen and (min-width: 1920px){
+	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+	/*-------------------------------------------*/
+	.keepWatching__list {
+		width: 135%;
+	}
+}
 
+/* Configuración específica para pantallas hasta 2560px de ancho como máximo (Desktop). */
+/*--------------------------------------------------------------------------------------*/
+@media screen and (min-width: 2560px){
+	/* Propiedades del CARRUSEL de SEGUIR VIENDO */
+	/*-------------------------------------------*/
+	.keepWatching__list {
+		width: 100%;
+	}
 }
