@@ -107,38 +107,69 @@ function keepWatching__next() {
 	var displayPrev = prev__keepWatching.style.display;
 
 	if (translateXnext == "translateX(0%)" || translateXnext == ""){
-		keepWatching__list.style.transform = "translateX(-20%)";
+		keepWatching__list.style.transform = "translateX(-10%)";
 		prev__keepWatching.style.display = "flex";
 	}
-	if (translateXnext == "translateX(-20%)"){
+	else if (translateXnext == "translateX(-10%)"){
+		keepWatching__list.style.transform = "translateX(-20%)";
+	}
+	else if (translateXnext == "translateX(-20%)"){
+		keepWatching__list.style.transform = "translateX(-30%)";
+	}
+	else if (translateXnext == "translateX(-30%)"){
 		keepWatching__list.style.transform = "translateX(-40%)";
 	}
-	if (translateXnext == "translateX(-40%)"){
+	else if (translateXnext == "translateX(-40%)"){
+		keepWatching__list.style.transform = "translateX(-50%)";
+	}
+	else if (translateXnext == "translateX(-50%)"){
 		keepWatching__list.style.transform = "translateX(-60%)";
 	}
-	if (translateXnext == "translateX(-60%)"){
+	else if (translateXnext == "translateX(-60%)"){
+		keepWatching__list.style.transform = "translateX(-70%)";
+	}
+	else if (translateXnext == "translateX(-70%)"){
 		keepWatching__list.style.transform = "translateX(-80%)";
 	}
-	if (translateXnext == "translateX(-80%)"){
+	else if (translateXnext == "translateX(-80%)"){
+		keepWatching__list.style.transform = "translateX(-90%)";
+	}
+	else if (translateXnext == "translateX(-90%)"){
 		keepWatching__list.style.transform = "translateX(0%)";
 		prev__keepWatching.style.display = "none";
 	}
+
 }
 
 function keepWatching__prev() {
 	var translateXprev = keepWatching__list.style.transform;
 	var displayPrev = prev__keepWatching.style.display;
 
-	if (translateXprev == "translateX(-80%)"){
+	if (translateXprev == "translateX(-90%)"){
+		keepWatching__list.style.transform = "translateX(-80%)";
+	}
+	else if (translateXprev == "translateX(-80%)"){
+		keepWatching__list.style.transform = "translateX(-70%)";
+	}
+	else if (translateXprev == "translateX(-70%)"){
 		keepWatching__list.style.transform = "translateX(-60%)";
 	}
-	if (translateXprev == "translateX(-60%)"){
+	else if (translateXprev == "translateX(-60%)"){
+		keepWatching__list.style.transform = "translateX(-50%)";
+	}
+	else if (translateXprev == "translateX(-50%)"){
 		keepWatching__list.style.transform = "translateX(-40%)";
 	}
-	if (translateXprev == "translateX(-40%)"){
+	else if (translateXprev == "translateX(-40%)"){
+		keepWatching__list.style.transform = "translateX(-30%)";
+	}
+	else if (translateXprev == "translateX(-30%)"){
 		keepWatching__list.style.transform = "translateX(-20%)";
 	}
-	if (translateXprev == "translateX(-20%)"){
+	else if (translateXprev == "translateX(-20%)"){
+		keepWatching__list.style.transform = "translateX(-10%)";
+	}
+	else if (translateXprev == "translateX(-10%)"){
 		keepWatching__list.style.transform = "translateX(0%)";
 		prev__keepWatching.style.display = "none";
 	}
